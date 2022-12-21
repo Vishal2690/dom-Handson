@@ -27,7 +27,7 @@ let redElement = document.getElementById("heading").style.color="red";
 let changeButton = document.getElementById("sm-btn");
 changeButton.addEventListener("click", changeWorld);
 function changeWorld (){
-    document.getElementById("texted").innerText = "Welcome to Elevation Academy";
+    document.getElementById("texted").innerHTML = "Welcome to Elevation Academy";
 }
 
 
