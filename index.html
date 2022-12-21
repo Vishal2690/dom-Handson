@@ -1,0 +1,127 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <center>
+        <div class="item2"> Document Object Model</div>
+    </center>
+    <h3>01. Write the code to access element which is having id as "text"</h3>
+    <pre>
+        let divElement = document.getElementById("item");
+        console.log(divElement.innerText);
+    </pre>
+    <div id="item">Namaste PrepBytes</div>
+    <br>
+    <hr>
+    <h3>02. Write the code to access element which is having tag as "h1"</h3>
+    <pre>
+        let headingElement = document.getElementsByTagName("h1");
+        console.log(headingElement[0].innerText);
+    </pre>
+    <h1>Hi, we write the code</h1>
+    <br>
+    <hr>
+    <h3>03. Write the code to access element which is having class as "box"</h3>
+    <pre>
+        let spanElement = document.getElementsByClassName("box");
+        console.log(spanElement[0].innerText);
+    </pre>
+    <span class="box">hi, we are create a box</span>
+    <hr>
+    <h3> 04.  Change the heading from ""Hello"" to ""Hello World"" using DOM functions"</h3>
+    <pre>
+        let helloElement = document.getElementById("text1");
+        helloElement.innerText = "Hello World";
+    </pre>
+    <div id="text1">Hello</div>
+    
+    <hr>
+    <h3>05. Create three cards on HTML page and arrange them using flex property in row or horizontal direction and also create button at the bottom named "Change Flex direction". When user clicks on this button, the cards arrangement should be changed to vertical direction.</h3>
+    <pre>
+        
+    </pre>
+    <div id="flex-container">
+        <div class="flexbox"></div>
+        <div class="flexbox"></div>
+        <div class="flexbox"></div>
+    </div>
+    <button id="btn">Change Flex direction</button>
+
+    <hr>
+    <h3>06. What's the difference between window vs document?</h3>
+    <ol>
+        <li> <b>Window :-</b> is the execution context and global object for that context's JavaScript. It is the top most object and outermost element of the object hierarchy.</li>
+        <li><b>Document :-</b> contains the DOM, initialized by parsing HTML.Each HTML document that gets loaded into a window becomes a document object. The document contains the contents of the page.
+        </li>
+    </ol>   
+    <hr>
+    <h3>07.Add one style attribute and give text color as red and id attribute and give the id value as ""heading"" in the above given h1 tag using DOM functions"</h3>
+    <pre>
+        let redElement = document.getElementById("heading").style.color="red";
+    </pre>
+    <h1 id="heading">Hello</h1>
+    <hr>
+    <h3>08. Create an HTML page having content as Hello world and a button named Replace Text. When user will click on this button page content should be changed to "Welcome to Elevation academy"</h3>
+    <pre>
+        let changeButton = document.getElementById("sm-btn");
+        changeButton.addEventListener("click", changeWorld);
+        function changeWorld (){
+            document.getElementById("texted").innerText = "Welcome to Elevation Academy";
+        }
+        
+    </pre>
+    <h2 id="texted">Hello world</h2>
+    <button id="sm-btn">Replace Text</button>
+   
+      
+    <hr>
+    <h3>09. Write code to implement timer clock using JS -- display HH:MM:SS -- the time should keep updating every second</h3>
+    <div id="clock">
+        <p id="hrs"></p>
+        <p id="min"></p>
+        <p id="sec"></p>
+    </div>
+    <pre>
+        function timer(){
+            let times = new Date();
+        
+            let hr = times.getHours();
+            let min = times.getMinutes();
+            let secs = times.getSeconds();
+            document.getElementById("clock").innerHTML =`${hr} : ${min} : ${secs}`;
+            document.getElementById()
+            console.log(he, min, secs);
+        }
+        setInterval(timer, 1000)
+    </pre>
+    
+    <hr>
+    <h3>10. Create a select drop down for selecting Year 20-21, 21-22 etc. Print the item text selected</h3>
+    <pre>
+
+    </pre>
+
+    <span id="printed-text"></span>
+    <select name="dropdown" id="dropdown" onchange="printDate()">
+        <option value="2020 - 2022">2020 - 2022</option>
+        <option value="2022 - 2023">2022 - 2023</option>
+        <option value="2023 - 2024">2023 - 2024</option>
+        <option value="2024 - 2025">2024 - 2025</option>
+        <option value="2025 - 2026">2025 - 2026</option>
+        <option value="2026 - 2027">2026 - 2027</option>
+        <option value="2027 - 2028">2027 - 2028</option>
+        <option value="2028 - 2029">2028 - 2029</option>
+    </select>
+    
+    <script src="index.js"></script>
+</body>
+
+</html>

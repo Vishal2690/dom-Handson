@@ -1,0 +1,72 @@
+body{
+    background-color: burlywood;
+}
+
+.item2{
+    background-color: red;
+    width: 400px;
+    border-radius: 10px;
+    color: antiquewhite;
+    font-size: 30px;
+    font-weight: bold;
+}
+
+#item{
+    color: snow;
+    text-shadow: 3px 4px 5px gray;
+}
+h1{
+    color: snow;
+    text-shadow: 3px 4px 5px gray;
+}
+
+.box{
+    color: snow;
+    font-size: 15px;
+    text-shadow: 3px 4px 5px gray;
+}
+
+pre{
+    color: rgb(91, 50, 205);
+}
+
+#clock{
+    color: aliceblue;
+    text-shadow: 3px 4px 5px gray;
+    font-size: 20px;
+    font-weight: bold;
+}
+
+#text1{
+    color: aliceblue;
+    text-shadow: 3px 4px 5px gray;
+}
+
+#flex-container{
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+}
+.flexbox{
+    width: 150px;
+    height: 150px;
+    background-color: rgb(234, 90, 17);
+    margin: 20px;
+}
+#btn{
+    border-radius: 5px;
+    border: 2px solid rgb(162, 158, 158);
+    background-color: rgb(161, 227, 214);
+    cursor: pointer;
+}
+
+#sm-btn{
+    border-radius: 5px;
+    border: 2px solid rgb(162, 158, 158);
+    background-color: rgb(161, 227, 214);
+    cursor: pointer;
+}
+#texted{
+    color: aliceblue;
+    text-shadow: 3px 4px 5px gray;
+}
